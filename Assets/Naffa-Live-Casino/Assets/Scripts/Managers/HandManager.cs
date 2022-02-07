@@ -51,7 +51,7 @@ public class HandManager : MonoBehaviour
     void Start()
     {
         isRoundStarted = false;
-        Invoke("startGame", 2f);
+        StartCoroutine(WaitForShuffleSound());
 
 
     }
@@ -159,7 +159,6 @@ public class HandManager : MonoBehaviour
             }
             if (timeToStartCount >= timeToStart && isRoundStarted == false)
             {
-                pleaseWaitPanel.SetActive(false);
                 shuffleSound.volume = 0.2f;
                 shuffleSound.clip = SoundSystem.Instance.ShuffleSound;
                 //if shuffle sound is not playing
@@ -195,10 +194,16 @@ public class HandManager : MonoBehaviour
                 shuffleSound.volume = 1f;
             }
         }
-        else
-        {
-            pleaseWaitPanel.SetActive(true);
-        }
+    }
+    IEnumerator WaitForShuffleSound()
+    {
+        pleaseWaitPanel.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        pleaseWaitPanel.SetActive(false);
+        yield return new WaitForSeconds(0.4f);
+        PanelSystem.instance.showPanel("PartnerPanel");
+        yield return new WaitForSeconds(0.4f);
+        PartnerSystem.instance.StartCoroutine(PartnerSystem.instance.Distrbute());
     }
     public string GetPlayerTeamName(string PlayerTag)
     {

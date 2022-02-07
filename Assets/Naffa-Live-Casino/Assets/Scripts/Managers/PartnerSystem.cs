@@ -22,7 +22,7 @@ public class PartnerSystem : MonoBehaviour
     }
     void Start()
     {
-        StartCoroutine(Distrbute());
+        
     }
     public IEnumerator Distrbute()
     {

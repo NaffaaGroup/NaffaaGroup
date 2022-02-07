@@ -69,7 +69,6 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
         if (placeholderParent != null)
         {
-            Debug.Log(placeholderParent.name + " PLACEHOLDERPARENTNAME");
             for (int i = 0; i < placeholderParent.childCount; i++)
             {
                 if (transform.position.x < placeholderParent.GetChild(i).position.x)
