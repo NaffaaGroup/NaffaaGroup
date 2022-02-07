@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{c07e2de8-6cbc-f53d-dad5-ad914113ffb4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayFabEditorExtensions", "PlayFabEditorExtensions.csproj", "{1083aad5-5746-481b-7767-49b672f6b9cc}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{c07e2de8-6cbc-f53d-dad5-ad914113ffb4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c07e2de8-6cbc-f53d-dad5-ad914113ffb4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1083aad5-5746-481b-7767-49b672f6b9cc}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1083aad5-5746-481b-7767-49b672f6b9cc}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
