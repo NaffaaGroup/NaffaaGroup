@@ -368,6 +368,7 @@ public class HandManager : MonoBehaviour
     public void PlayCard(GameObject card)
     {
 
+        card.transform.rotation = Quaternion.identity;
         card.GetComponent<Image>().sprite = card.GetComponent<CardInfo>().cardInfo.cardImage;
         //search in array of players for the player who played the card
         card.transform.SetParent(cardPos[crrentPlayerID.playerNumber].transform);

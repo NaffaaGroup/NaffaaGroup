@@ -33,6 +33,7 @@ public class PlayerHandler : MonoBehaviour
     public bool goDownWithMelds { get; set; }
     public int sum { get; set; }
     public int score;
+    public bool ReadyToDrop { get; set; }
     public Sprite playerImage;
     public float timer { get; set; }
     public string playerTeam;
@@ -68,7 +69,7 @@ public class PlayerHandler : MonoBehaviour
         {
             BotData data = NamesSystem.Instance.GetRandomData();
             playerName = data.name;
-            this.PlayerImageMesh.sprite =data.image;
+            this.PlayerImageMesh.sprite = data.image;
             this.playerImage = data.image;
             this.playerNameText.text = playerName;
         }
@@ -83,6 +84,27 @@ public class PlayerHandler : MonoBehaviour
 
     private void Update()
     {
+        int chI = 0;
+        if (playerTurn&&gameObject.tag=="MainPlayer")
+        {
+
+            foreach (Transform ch in cardsHolderUI.transform)
+            {
+                //if any ch has ReadyToDrop = true, then set ReadyToDrag = true
+                if (ch.gameObject.GetComponent<Draggable>().ReadyToDrag)
+                {
+                    chI++;
+                }
+            }
+        }
+        if (chI == 0)
+        {
+            ReadyToDrop = false;
+        }
+        else
+        {
+            ReadyToDrop = true;
+        }
         PlayerOrder = TypesAssets.Instance.getScoreObject(playerNumber);
         scoreTxt = CurrentOrder.Instance.TopScores[playerNumber];
         if (RoundController.instance.CheckCurrentPlayerTeam(this) == "Team1")

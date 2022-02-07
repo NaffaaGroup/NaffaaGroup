@@ -154,7 +154,7 @@ public class RoundController : MonoBehaviour
                 StartNewRound();
                 resetRound = false;
             }
-            
+
             if (RoundNumber == 0)
             {
                 int playedPlayer = 0;
@@ -168,7 +168,7 @@ public class RoundController : MonoBehaviour
 
                     foreach (Draggable card in pl.cardsHolderUI.GetComponentsInChildren<Draggable>())
                     {
-                        card.GetComponent<Draggable>().enabled = false;
+                        card.GetComponent<Draggable>().CanDrag = false;
                     }
                 }
                 if (playedPlayer == 4)
@@ -214,7 +214,7 @@ public class RoundController : MonoBehaviour
                             OrderPanel.transform.GetChild(0).GetComponent<OrderButton>().Order(0);
                         }
                         //check if bot order pass our turn start
-                        if (HandManager.instance.crrentPlayerID.turnStart &&!HandManager.instance.crrentPlayerID.isOrder)
+                        if (HandManager.instance.crrentPlayerID.turnStart && !HandManager.instance.crrentPlayerID.isOrder)
                         {
 
                             int spadeCount = 0;
@@ -350,7 +350,8 @@ public class RoundController : MonoBehaviour
 
 
                         }
-                        else{
+                        else
+                        {
                             Debug.LogWarning("bot order pass");
                             OrderPanel.transform.GetChild(0).GetComponent<OrderButton>().Order(0);
                         }
@@ -417,7 +418,7 @@ public class RoundController : MonoBehaviour
                 string OrderTypeName = GetTypeName(TypeNumber);
                 foreach (Draggable card in HandManager.instance.crrentPlayerID.cardsHolderUI.GetComponentsInChildren<Draggable>())
                 {
-                    card.GetComponent<Draggable>().enabled = true;
+                    card.GetComponent<Draggable>().CanDrag = true;
                     card.GetComponent<Image>().color = Color.white;
 
                 }
@@ -474,6 +475,41 @@ public class RoundController : MonoBehaviour
                 }
                 else
                 {
+                    if (currentPlayer.ReadyToDrop)
+                    {
+
+                        foreach (Transform child in currentPlayer.cardsHolderUI.transform)
+                        {
+                            //get get Ready To drag Cart
+
+                            if (currentPlayer.playerOrderIndex.ToString() == "first")
+                            {
+                                if (child.GetComponent<Draggable>().ReadyToDrag)
+                                {
+                                    HandManager.instance.PlayCard(child.gameObject);
+                                    break;
+                                }
+                            }
+                            else
+                            {
+                                if (child.GetComponent<Draggable>().ReadyToDrag)
+                                {
+                                    if (CheckIfAllowed(child.GetComponent<CardInfo>()))
+                                    {
+                                        HandManager.instance.PlayCard(child.gameObject);
+                                    }
+                                    else
+                                    {
+                                        child.GetComponent<Draggable>().CanDrag = false;
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
                     if (currentPlayer.GetComponent<TimerController>().seconds <= 1.5f)
                     {
                         //play random card because player is afk
@@ -499,17 +535,31 @@ public class RoundController : MonoBehaviour
 
                             bool breakLoop = false;
                             //loop in player card
+
+
                             foreach (Transform child in currentPlayer.cardsHolderUI.transform)
                             {
-                                HandManager.instance.crrentPlayerID.LoopTimes++;
-                                CardInfo Card = child.GetComponent<CardInfo>();
-                                breakLoop = CheckCardTable(Card, TypeName, m, HandManager.instance.crrentPlayerID.LoopTimes, OrderTypeName);
-                                if (breakLoop)
+                                if (child.GetComponent<Draggable>().ReadyToDrag)
                                 {
-                                    breakLoop = false;
+                                    HandManager.instance.PlayCard(child.gameObject);
+                                    breakLoop = true;
                                     break;
                                 }
+                            }
+                            if (!breakLoop)
+                            {
+                                foreach (Transform child in currentPlayer.cardsHolderUI.transform)
+                                {
+                                    HandManager.instance.crrentPlayerID.LoopTimes++;
+                                    CardInfo Card = child.GetComponent<CardInfo>();
+                                    breakLoop = CheckCardTable(Card, TypeName, m, HandManager.instance.crrentPlayerID.LoopTimes, OrderTypeName);
+                                    if (breakLoop)
+                                    {
+                                        breakLoop = false;
+                                        break;
+                                    }
 
+                                }
                             }
                         }
                     }
@@ -543,12 +593,14 @@ public class RoundController : MonoBehaviour
                                 string cardType = GetFirstPlayedCard().cardInfo.cardType.ToString();
                                 if (cardCoObj.GetComponent<CardInfo>().cardInfo.cardType.ToString() != cardType)
                                 {
-                                    cardCoObj.GetComponent<Draggable>().enabled = false;
+                                    cardCoObj.GetComponent<Draggable>().CanDrag = false;
                                     cardCoObj.GetComponent<Image>().color = Color.gray;
+
                                 }
+
                                 else
                                 {
-                                    cardCoObj.GetComponent<Draggable>().enabled = true;
+                                    cardCoObj.GetComponent<Draggable>().CanDrag = true;
                                     cardCoObj.GetComponent<Image>().color = Color.white;
                                 }
                             }
@@ -565,7 +617,7 @@ public class RoundController : MonoBehaviour
                             foreach (Transform cardComp in currentPlayer.cardsHolderUI.transform)
                             {
                                 GameObject cardCoObj = cardComp.gameObject;
-                                cardCoObj.GetComponent<Draggable>().enabled = true;
+                                cardCoObj.GetComponent<Draggable>().CanDrag = true;
                                 cardCoObj.GetComponent<Image>().color = Color.white;
                             }
                         }
@@ -700,6 +752,39 @@ public class RoundController : MonoBehaviour
 
             }
 
+        }
+
+    }
+    bool CheckIfAllowed(CardInfo card)
+    {
+        string TypeN = "";
+        foreach (Transform ch in GameObject.Find("TableZone").transform)
+        {
+            if (ch.childCount > 0)
+            {
+                if (ch.GetChild(0).GetComponent<CardInfo>().player.playerOrderIndex.ToString() == "first")
+                {
+                    TypeN = ch.GetChild(0).GetComponent<CardInfo>().cardInfo.cardType.ToString();
+                }
+            }
+        }
+        Debug.LogWarning(TypeN);
+        bool doseHave = false;
+        //check if player has TypeN card
+        foreach (Transform ch in card.player.cardsHolderUI.transform)
+        {
+            if (ch.GetComponent<CardInfo>().cardInfo.cardType.ToString() == TypeN)
+            {
+                doseHave = true;
+            }
+        }
+        if (card.cardInfo.cardType.ToString() == TypeN || !doseHave)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
 
     }
@@ -1017,7 +1102,7 @@ public class RoundController : MonoBehaviour
                                 return false;
                             }
 
-                            if (cardToCheck.cardInfo.cardNumber == GetPlayerCard("Lower", OrderTypeName,cardToCheck.player).cardInfo.cardNumber)
+                            if (cardToCheck.cardInfo.cardNumber == GetPlayerCard("Lower", OrderTypeName, cardToCheck.player).cardInfo.cardNumber)
                             {
                                 HandManager.instance.PlayCard(cardToCheck.gameObject);
                                 return true;
