@@ -1,0 +1,1782 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.22f1 (e1a7f79fd887) revision 14788599'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 16282 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/NaffaaGroup
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+61782
+Successfully changed project path to: E:/NaffaaGroup
+E:/NaffaaGroup
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 232.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/NaffaaGroup/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon (TM) R5 M330 (ID=0x6660)
+    Vendor:   
+    VRAM:     2039 MB
+    Driver:   27.20.1034.6
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005505 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 737.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 13.165 seconds
+Domain Reload Profiling:
+	ReloadAssembly (13166ms)
+		BeginReloadAssembly (419ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (3ms)
+		EndReloadAssembly (2663ms)
+			LoadAssemblies (408ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (768ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (315ms)
+			SetupLoadedEditorAssemblies (1201ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (738ms)
+				BeforeProcessingInitializeOnLoad (39ms)
+				ProcessInitializeOnLoadAttributes (301ms)
+				ProcessInitializeOnLoadMethodAttributes (109ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.015786 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 199.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:42)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:42 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  8.646 seconds
+Domain Reload Profiling:
+	ReloadAssembly (8649ms)
+		BeginReloadAssembly (1571ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (5ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (6847ms)
+			LoadAssemblies (1056ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (1620ms)
+			ReleaseScriptCaches (7ms)
+			RebuildScriptCaches (904ms)
+			SetupLoadedEditorAssemblies (3116ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (200ms)
+				BeforeProcessingInitializeOnLoad (278ms)
+				ProcessInitializeOnLoadAttributes (2549ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 2.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1670 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.1 MB.
+System memory in use after: 89.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2117.
+Total: 19.009700 ms (FindLiveObjects: 1.848000 ms CreateObjectMapping: 0.709400 ms MarkObjects: 16.294900 ms  DeleteObjects: 0.154200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites
+  artifactKey: Guid(9d6def1d2856b6f4f89c9770b52d1494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites using Guid(9d6def1d2856b6f4f89c9770b52d1494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425019caef84baa31b058d26d714c809') in 0.076665 seconds 
+  Import took 0.109800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.868437 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/Tables
+  artifactKey: Guid(6e9e35196f2ef6e4c85080e9356a58b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/Tables using Guid(6e9e35196f2ef6e4c85080e9356a58b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3da3baa189ed59ec31153d18597863') in 0.022046 seconds 
+  Import took 0.065749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.487398 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Frame
+  artifactKey: Guid(a4fe1e93973fc3d4088df06e13efcd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Frame using Guid(a4fe1e93973fc3d4088df06e13efcd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe953288fd595e5e2470ed528280610c') in 0.045533 seconds 
+  Import took 0.076041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.840056 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Fram
+  artifactKey: Guid(a4fe1e93973fc3d4088df06e13efcd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Fram using Guid(a4fe1e93973fc3d4088df06e13efcd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4522c2e8dc3687b67fbb919fbbc7ffe5') in 0.016342 seconds 
+  Import took 0.081610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.613306 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Frames
+  artifactKey: Guid(a4fe1e93973fc3d4088df06e13efcd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Frames using Guid(a4fe1e93973fc3d4088df06e13efcd2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06646c38e57b5f4f3d7038fab5c8b2ab') in 0.056634 seconds 
+  Import took 0.072724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.777888 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/Tables/BackGround
+  artifactKey: Guid(b7dd0bb157f257245bdb2532542ab3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/Tables/BackGround using Guid(b7dd0bb157f257245bdb2532542ab3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6507b68f78d55d5c638526ac261c85c') in 0.051487 seconds 
+  Import took 0.085551 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.040276 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:42)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:42 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in 13.244 seconds
+Domain Reload Profiling:
+	ReloadAssembly (13246ms)
+		BeginReloadAssembly (2815ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (244ms)
+		EndReloadAssembly (9755ms)
+			LoadAssemblies (2617ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (3352ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (1429ms)
+			SetupLoadedEditorAssemblies (3935ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (2250ms)
+				ProcessInitializeOnLoadAttributes (1601ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (31ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1654 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2121.
+Total: 8.473800 ms (FindLiveObjects: 0.417100 ms CreateObjectMapping: 0.350500 ms MarkObjects: 7.652600 ms  DeleteObjects: 0.050700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.046448 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:42)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:42 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in 10.698 seconds
+Domain Reload Profiling:
+	ReloadAssembly (10699ms)
+		BeginReloadAssembly (1589ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (21ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (245ms)
+		EndReloadAssembly (7444ms)
+			LoadAssemblies (1341ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (3417ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (375ms)
+			SetupLoadedEditorAssemblies (2320ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (525ms)
+				ProcessInitializeOnLoadAttributes (1682ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (26ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1654 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.5 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2125.
+Total: 11.327200 ms (FindLiveObjects: 0.371500 ms CreateObjectMapping: 0.137000 ms MarkObjects: 10.783100 ms  DeleteObjects: 0.033700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013561 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:42)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:42 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  5.877 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5879ms)
+		BeginReloadAssembly (513ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (107ms)
+		EndReloadAssembly (5151ms)
+			LoadAssemblies (573ms)
+			RebuildTransferFunctionScriptingTraits (2ms)
+			SetupTypeCache (1576ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (168ms)
+			SetupLoadedEditorAssemblies (2413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (611ms)
+				ProcessInitializeOnLoadAttributes (1720ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (31ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (36ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1654 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.4 MB.
+System memory in use after: 87.6 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2129.
+Total: 10.266400 ms (FindLiveObjects: 0.328200 ms CreateObjectMapping: 0.153100 ms MarkObjects: 9.711100 ms  DeleteObjects: 0.071800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1084.482578 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/05 Card Select popup Screen.jpg
+  artifactKey: Guid(fd51d0ff507c8ca4da3943c316b3942f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/05 Card Select popup Screen.jpg using Guid(fd51d0ff507c8ca4da3943c316b3942f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6158b1ef0347ea84deff6b827751fb') in 0.855950 seconds 
+  Import took 0.860905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Reference Screens/12.1 Tarneeb 400-41 Play screen.jpg
+  artifactKey: Guid(b3e84252ca3712a40928f84cbe5f0e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Reference Screens/12.1 Tarneeb 400-41 Play screen.jpg using Guid(b3e84252ca3712a40928f84cbe5f0e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535b93cbb38524378c9fdb22b1ca535b') in 0.108734 seconds 
+  Import took 0.113740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/bgmain.png
+  artifactKey: Guid(1da2e4a42f20b2340a1f24a30f8214bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/bgmain.png using Guid(1da2e4a42f20b2340a1f24a30f8214bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae8b5879b365bdeef3f111f2ea88bfc') in 0.121844 seconds 
+  Import took 0.172038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Reference Screens/12.2 Trix Tarneeb Play screen.jpg
+  artifactKey: Guid(d92bc9a6788caca409f1ecef49ed9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Reference Screens/12.2 Trix Tarneeb Play screen.jpg using Guid(d92bc9a6788caca409f1ecef49ed9fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4bbfcfb4d35ecd06eca4db34cf3a22') in 0.114321 seconds 
+  Import took 0.123399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/219_05_busbusiness_interviewHeader_1485x1254.jpg
+  artifactKey: Guid(a9783ab86c92b1b4fa1b2b4a83a505b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/219_05_busbusiness_interviewHeader_1485x1254.jpg using Guid(a9783ab86c92b1b4fa1b2b4a83a505b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eddd38ef972f486f29fddc7cfa38b9e') in 0.181272 seconds 
+  Import took 0.194040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Back.png
+  artifactKey: Guid(6a72f35d6981c6a4f9adf931ea12d648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Back.png using Guid(6a72f35d6981c6a4f9adf931ea12d648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e105ee3fa8fe2536dc83d1697544cd') in 0.063884 seconds 
+  Import took 0.105176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Achivement.png
+  artifactKey: Guid(f6541c774c96e2a4189d177b09b339cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Achivement.png using Guid(f6541c774c96e2a4189d177b09b339cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3203dfb11073db77b4b478f0cfc5b80f') in 0.053876 seconds 
+  Import took 0.061794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000762 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/bgMian.png
+  artifactKey: Guid(9203dbaf27561e145882c1a1dbf767c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/bgMian.png using Guid(9203dbaf27561e145882c1a1dbf767c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f575fb8eacc26f54be3ac8b66e80c49') in 0.074862 seconds 
+  Import took 0.085400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/bgscore box.png
+  artifactKey: Guid(7a0e044809c72bf49a6c99828d0c1ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/bgscore box.png using Guid(7a0e044809c72bf49a6c99828d0c1ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ae4cd1a8476d4e912e0cda3e2013e4') in 0.055950 seconds 
+  Import took 0.070878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.866326 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Bottombar.png
+  artifactKey: Guid(ca649cca91a7f2e4681a06f20d7daea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Bottombar.png using Guid(ca649cca91a7f2e4681a06f20d7daea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751ef1900efe79e8d38c315f329e4baa') in 0.037296 seconds 
+  Import took 0.041457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_2 #6022.png
+  artifactKey: Guid(6a000994e1d05ab46b10b743796fbeca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_2 #6022.png using Guid(6a000994e1d05ab46b10b743796fbeca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9150a6041c66cc220027a9299a5d806') in 0.104234 seconds 
+  Import took 0.114296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_6 #7114.png
+  artifactKey: Guid(e3ce130fc076c4946b752a7b9494a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_6 #7114.png using Guid(e3ce130fc076c4946b752a7b9494a2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0627814a636613ad36fccea8a247a3') in 0.051201 seconds 
+  Import took 0.093605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_4 #6071.png
+  artifactKey: Guid(c7a9d8af266b99d48a12d78b78692342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_4 #6071.png using Guid(c7a9d8af266b99d48a12d78b78692342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a095be7713198b1e573f3cd75c278df') in 0.030022 seconds 
+  Import took 0.034429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_7 #6953.png
+  artifactKey: Guid(be15485d95b7d69439d71d946e8a4c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_7 #6953.png using Guid(be15485d95b7d69439d71d946e8a4c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f154483a2662a4c06f5b112fe432d78') in 0.052862 seconds 
+  Import took 0.065776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_9 #6085.png
+  artifactKey: Guid(3621ed3c95b9eec41b092b750f390273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_9 #6085.png using Guid(3621ed3c95b9eec41b092b750f390273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46eaaba43ad769ba0f17cbe4bb1c6d00') in 0.065810 seconds 
+  Import took 0.070890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_8 #6925.png
+  artifactKey: Guid(9629468125f9ebe43af49181a40be186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_8 #6925.png using Guid(9629468125f9ebe43af49181a40be186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a24c14719fa2028c80dcc486c15083f') in 0.048099 seconds 
+  Import took 0.053407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001152 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_3 #6937.png
+  artifactKey: Guid(9db8c2026cbcd8d4285c95856c584675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_3 #6937.png using Guid(9db8c2026cbcd8d4285c95856c584675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab7c7931e6e17f36ae4e23ce910ff38') in 0.056089 seconds 
+  Import took 0.063200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002764 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_5 #6120.png
+  artifactKey: Guid(ebe50ff88cbfe384eb32dcef166ef48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_5 #6120.png using Guid(ebe50ff88cbfe384eb32dcef166ef48d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e45f16fcd1fc5cdcaabe3eed8fde5d') in 0.049302 seconds 
+  Import took 0.059444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007568 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_1 #6106.png
+  artifactKey: Guid(76e88a9129f1dfe44963e9ca1624080b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_1 #6106.png using Guid(76e88a9129f1dfe44963e9ca1624080b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82a82fcd66de5e87362b5bf1545de4b') in 0.046567 seconds 
+  Import took 0.051965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.262786 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_10 #7079.png
+  artifactKey: Guid(606d9e609d8bf874aa65744c9542001a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_10 #7079.png using Guid(606d9e609d8bf874aa65744c9542001a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f234b0c6390d2816d52d821800c162e') in 0.025776 seconds 
+  Import took 0.031485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_11 #6001.png
+  artifactKey: Guid(b15df151f121c2b4c817d7dbef9068ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_11 #6001.png using Guid(b15df151f121c2b4c817d7dbef9068ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7857341417260a523a74e4dd53ad0f8b') in 0.037678 seconds 
+  Import took 0.050508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_12 #6960.png
+  artifactKey: Guid(6c32d324cd8cf6a49b067697d188ad28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_12 #6960.png using Guid(6c32d324cd8cf6a49b067697d188ad28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46598e6b1d84bea67621d01233ed1ffe') in 0.161617 seconds 
+  Import took 0.169506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_13 #6134.png
+  artifactKey: Guid(b80bb0abecb747e48a8853922a1be571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_0_13 #6134.png using Guid(b80bb0abecb747e48a8853922a1be571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9477c482576b432132e77b39948a2a87') in 0.076961 seconds 
+  Import took 0.090666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.275725 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_1 #6981.png
+  artifactKey: Guid(4cedf32bb6b0de84e95a3ca66bcaa93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_1 #6981.png using Guid(4cedf32bb6b0de84e95a3ca66bcaa93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89536a6f452c997c785667e16407d35f') in 0.024885 seconds 
+  Import took 0.029562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_2 #6141.png
+  artifactKey: Guid(31500ab67f302c7489cf631ec4954baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_2 #6141.png using Guid(31500ab67f302c7489cf631ec4954baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d4f481025760676b5d913ac73c8b51') in 0.031112 seconds 
+  Import took 0.036277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.200542 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_3 #6057.png
+  artifactKey: Guid(453a11066cc84ad4990a13f451b2f217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_3 #6057.png using Guid(453a11066cc84ad4990a13f451b2f217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef9b60ce253437ebb3c8a112804e117') in 0.031054 seconds 
+  Import took 0.036327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_8 #7023.png
+  artifactKey: Guid(6d4b26ff62a53d447a774650b1055fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_8 #7023.png using Guid(6d4b26ff62a53d447a774650b1055fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8902bc0e2eb68f9116594d70e949a06') in 0.095621 seconds 
+  Import took 0.105915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_11 #7030.png
+  artifactKey: Guid(904a3352e09270844965566a407a7b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_11 #7030.png using Guid(904a3352e09270844965566a407a7b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac8fe7db3a6792756a40f956af81e64') in 0.079463 seconds 
+  Import took 0.092398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_7 #7086.png
+  artifactKey: Guid(e2180aa4e3426ff438b6c5a42c5bd348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_7 #7086.png using Guid(e2180aa4e3426ff438b6c5a42c5bd348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5a7c95878d1b6c660c550b25ce3d72') in 0.038894 seconds 
+  Import took 0.044092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_5 #6078.png
+  artifactKey: Guid(529505b9f3681a0419db330136973a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_5 #6078.png using Guid(529505b9f3681a0419db330136973a3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486d8819b0a92535c86f493c51d947e4') in 0.045873 seconds 
+  Import took 0.060399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000760 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_11 #7002.png
+  artifactKey: Guid(134a17107aaf7e5469f4c11cad6b873a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_11 #7002.png using Guid(134a17107aaf7e5469f4c11cad6b873a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477895da9b5ae43ce3e9102ca59b565f') in 0.040532 seconds 
+  Import took 0.047274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_6 #7037.png
+  artifactKey: Guid(facbc73add1961042a1457e69b388e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_6 #7037.png using Guid(facbc73add1961042a1457e69b388e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac3b19c6adb0a5377c33bcf9d7cfaad') in 0.037355 seconds 
+  Import took 0.042011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_3 #7121.png
+  artifactKey: Guid(b500ef49d7a81b24c80e94904d5b7626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_3 #7121.png using Guid(b500ef49d7a81b24c80e94904d5b7626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69fca27e7456195526729d3eef9ef77') in 0.025265 seconds 
+  Import took 0.033036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_4 #6946.png
+  artifactKey: Guid(6542a0b2be805484aa017bb94e9db3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_4 #6946.png using Guid(6542a0b2be805484aa017bb94e9db3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dcb9d9f3d8dfadfeb300a18a6c5f024') in 0.035369 seconds 
+  Import took 0.043435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_2 #6043.png
+  artifactKey: Guid(86f6aa09870325641b922c799c0e6075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_2 #6043.png using Guid(86f6aa09870325641b922c799c0e6075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ea43462c3a621eef81db0c191d5bd2') in 0.061999 seconds 
+  Import took 0.072752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001012 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_13 #7065.png
+  artifactKey: Guid(9ad22234aee23324eaa4d9f583bcb0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_13 #7065.png using Guid(9ad22234aee23324eaa4d9f583bcb0ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ab0faa07e2bde368dd980bd61f5b3cf') in 0.070710 seconds 
+  Import took 0.088757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_12 #7058.png
+  artifactKey: Guid(0f3fc310b6401ff4fa8c34a3060be397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_12 #7058.png using Guid(0f3fc310b6401ff4fa8c34a3060be397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e7747847a64c28876816a5654881d0') in 0.037956 seconds 
+  Import took 0.047772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_3 #6008.png
+  artifactKey: Guid(7d545000ef107c64bb490fd0eafc6945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_3 #6008.png using Guid(7d545000ef107c64bb490fd0eafc6945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d11c31916c8eb5c8f77a0c0e188e27c') in 0.045921 seconds 
+  Import took 0.050664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_5 #6099.png
+  artifactKey: Guid(2c09eb13d80707e47b572159d078fa98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_5 #6099.png using Guid(2c09eb13d80707e47b572159d078fa98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f602265c5905974f7bde7591968c1ac') in 0.029794 seconds 
+  Import took 0.033841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_8 #6932.png
+  artifactKey: Guid(7dc0586b1ee2aba4383fec50e215225c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_8 #6932.png using Guid(7dc0586b1ee2aba4383fec50e215225c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c3529c640e5f11e436839acfc46539') in 0.027351 seconds 
+  Import took 0.032376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_1 #6015.png
+  artifactKey: Guid(787d9905e9abdc349bad0bab1c16d775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_1 #6015.png using Guid(787d9905e9abdc349bad0bab1c16d775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9496b67bf4f21cdad35aee0830f47097') in 0.045343 seconds 
+  Import took 0.050460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_13 #6967.png
+  artifactKey: Guid(0fccb6eb4e888574daf1ffbec9a2dfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_13 #6967.png using Guid(0fccb6eb4e888574daf1ffbec9a2dfa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5388620d11bf644eb66dcfca99a7597a') in 0.030552 seconds 
+  Import took 0.036680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_12 #6036.png
+  artifactKey: Guid(d5e06a5684a1fdc428682980f4fdf90d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_12 #6036.png using Guid(d5e06a5684a1fdc428682980f4fdf90d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fac9afcf508a282141a7773f466d0b') in 0.032453 seconds 
+  Import took 0.047749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000479 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_6 #6113.png
+  artifactKey: Guid(a03255591d1a1a748ab62f379a4e5296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_6 #6113.png using Guid(a03255591d1a1a748ab62f379a4e5296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586c94295a187a1f31468249b4c54c52') in 0.035259 seconds 
+  Import took 0.040884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_4 #7044.png
+  artifactKey: Guid(7718317700f41fa469dd375daab8e173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_4 #7044.png using Guid(7718317700f41fa469dd375daab8e173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e408b70d4bbdfebb29385feb51a2dd66') in 0.031930 seconds 
+  Import took 0.038120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_10 #6064.png
+  artifactKey: Guid(ac9aa9c330cb84b4991d79d37f62f4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_10 #6064.png using Guid(ac9aa9c330cb84b4991d79d37f62f4e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6b64bd7b3939594218c879b9d35165') in 0.030478 seconds 
+  Import took 0.034551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_7 #7107.png
+  artifactKey: Guid(d8fd5cdc5f5b03246bc7f90c2d645038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_7 #7107.png using Guid(d8fd5cdc5f5b03246bc7f90c2d645038) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03b9fb574fca409b83e6478330374d2') in 0.029842 seconds 
+  Import took 0.034013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000660 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_9 #7093.png
+  artifactKey: Guid(05a6d8b785830584c8c06fa02c0e4f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_9 #7093.png using Guid(05a6d8b785830584c8c06fa02c0e4f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fb03d8030d8ce7afd48019ea678487') in 0.025973 seconds 
+  Import took 0.030172 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_4 #7051.png
+  artifactKey: Guid(a75355d2095bdfa43a9e5b9c735e6a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_4 #7051.png using Guid(a75355d2095bdfa43a9e5b9c735e6a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfe1b3d412e31a6fcfbf398a64b36c8') in 0.032630 seconds 
+  Import took 0.052101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_5 #6148.png
+  artifactKey: Guid(64329eff79faafd4e8efdb6a6ee800c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_5 #6148.png using Guid(64329eff79faafd4e8efdb6a6ee800c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f644605ed535756d081f5eaca78a9c4') in 0.044341 seconds 
+  Import took 0.048601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_10 #6918.png
+  artifactKey: Guid(825177e7e85ba494db2ee06f66cafe0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_10 #6918.png using Guid(825177e7e85ba494db2ee06f66cafe0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ada92ba5744be230d89d5c0b4dc771') in 0.036003 seconds 
+  Import took 0.043054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_1 #7016.png
+  artifactKey: Guid(aa72d5bc3fb76554f929b961da88bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_1 #7016.png using Guid(aa72d5bc3fb76554f929b961da88bece) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4405f5f23f797244f8ca63e3f7528146') in 0.027244 seconds 
+  Import took 0.032410 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_9 #6995.png
+  artifactKey: Guid(02495da04870acd4d8337f7f6afe1719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_9 #6995.png using Guid(02495da04870acd4d8337f7f6afe1719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '495986d4fbac9555935301e5a5ce29e6') in 0.056221 seconds 
+  Import took 0.067190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_6 #6092.png
+  artifactKey: Guid(54cb1cdb7e707b84cbb63d663a5031f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_1_6 #6092.png using Guid(54cb1cdb7e707b84cbb63d663a5031f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddc479d6a4a5b50f5f584d2ddb8c356') in 0.088903 seconds 
+  Import took 0.102067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_8 #7009.png
+  artifactKey: Guid(17d38ee73e19d224fb1f0523543856da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_8 #7009.png using Guid(17d38ee73e19d224fb1f0523543856da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d350543f36fb02095341851d64ed1f') in 0.027930 seconds 
+  Import took 0.035068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_7 #6988.png
+  artifactKey: Guid(13a4406f931371a48ac5add0f237fda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_7 #6988.png using Guid(13a4406f931371a48ac5add0f237fda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbb5c4c5a2e75070a6d900019951f01') in 0.030449 seconds 
+  Import took 0.035301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.166364 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_9 #7072.png
+  artifactKey: Guid(4506b137f8fb65d43ae0e0a47314ccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_9 #7072.png using Guid(4506b137f8fb65d43ae0e0a47314ccab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad41822d14f0d7c07767f014d9995288') in 0.028261 seconds 
+  Import took 0.033932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_13 #6029.png
+  artifactKey: Guid(21ff9d3672b389849b55f6e7d2b24efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_13 #6029.png using Guid(21ff9d3672b389849b55f6e7d2b24efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2090aca841e1b1dfb1060a87c2f9a1') in 0.043546 seconds 
+  Import took 0.047366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/checkmark_off.png
+  artifactKey: Guid(d20c53c8cad21024091aeed0b9bf2a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/checkmark_off.png using Guid(d20c53c8cad21024091aeed0b9bf2a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd88be3e396e11655c5155a4d96bb1e') in 0.033393 seconds 
+  Import took 0.038806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006737 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/checkmark_on.png
+  artifactKey: Guid(a2f13c216f2649d49b892cade7f4e5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/checkmark_on.png using Guid(a2f13c216f2649d49b892cade7f4e5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bd6d3c2ee485e43751f76956661ff84') in 0.038504 seconds 
+  Import took 0.046641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/dashboardIconHover.png
+  artifactKey: Guid(b43817ee9dda16c41a628a705526a021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/dashboardIconHover.png using Guid(b43817ee9dda16c41a628a705526a021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e58e090290fc99ab3c50ed969ca12f') in 0.036651 seconds 
+  Import took 0.042516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker4.2.png
+  artifactKey: Guid(8c6582175ab290944990f2828d4378b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker4.2.png using Guid(8c6582175ab290944990f2828d4378b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8acbe0919cf8bbc487ad80c69a52f28') in 0.083378 seconds 
+  Import took 0.092985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker4.1.png
+  artifactKey: Guid(48255e72c4c334d4cb5007ac9f062f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker4.1.png using Guid(48255e72c4c334d4cb5007ac9f062f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056cd53681ee94e351376c615283428c') in 0.043888 seconds 
+  Import took 0.048908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Rectangle 9.png
+  artifactKey: Guid(d6eb0e1a09cfda04a98ab06d601e7b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Rectangle 9.png using Guid(d6eb0e1a09cfda04a98ab06d601e7b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64816fd370496bfecc741468a46e0123') in 0.025034 seconds 
+  Import took 0.029981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Hand.png
+  artifactKey: Guid(156c7f02522264048a0fd763e15ff3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Hand.png using Guid(156c7f02522264048a0fd763e15ff3f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d48d553190a5e68b475fa8e16a1d709') in 0.034036 seconds 
+  Import took 0.038934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/icons/sliderTime.png
+  artifactKey: Guid(0d11b7a1a39c2f744945fbfec22a5cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/icons/sliderTime.png using Guid(0d11b7a1a39c2f744945fbfec22a5cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578cd8e1017e547b53506487d794979b') in 0.081325 seconds 
+  Import took 0.085659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001121 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker5.1.png
+  artifactKey: Guid(ef9edc6c393d2fb4185527a762fb94a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker5.1.png using Guid(ef9edc6c393d2fb4185527a762fb94a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7809f14b5f82d6c32f35da28903c2539') in 0.061319 seconds 
+  Import took 0.067209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Timerbg.png
+  artifactKey: Guid(d763ea8283880224eae5fdd2309e550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Timerbg.png using Guid(d763ea8283880224eae5fdd2309e550c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ca0404be00c1eda97fb69487b63d46') in 0.043989 seconds 
+  Import took 0.050649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker5.1.png
+  artifactKey: Guid(04b41b38a28c30c4a9004b882f373622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker5.1.png using Guid(04b41b38a28c30c4a9004b882f373622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768497cd84c952d8441a0d614a8ee8e5') in 0.040758 seconds 
+  Import took 0.060449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Video.png
+  artifactKey: Guid(eaa31fc1a4d4d9c4093330edec3c69e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Video.png using Guid(eaa31fc1a4d4d9c4093330edec3c69e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6cb567175daf6c0c676efdf6b4b99a7') in 0.035262 seconds 
+  Import took 0.045068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Gift.png
+  artifactKey: Guid(92232f39524e29f47acf8804f5317d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Gift.png using Guid(92232f39524e29f47acf8804f5317d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5537e5c983646d3e64fcf6f6f5c725') in 0.042358 seconds 
+  Import took 0.048572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ic_coin.png
+  artifactKey: Guid(d73ca6fc5d7cdf147827de4ad081ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ic_coin.png using Guid(d73ca6fc5d7cdf147827de4ad081ffbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0186b7193dbef7e907358d2b273b8a54') in 0.033713 seconds 
+  Import took 0.039674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/portrait-successful-mature-businesswoman-arms-crossed-confident-business-professional-female-smiling-smart-suit-business-180283728.jpg
+  artifactKey: Guid(f4b046f0bc9b5a1478791c0661bab4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/portrait-successful-mature-businesswoman-arms-crossed-confident-business-professional-female-smiling-smart-suit-business-180283728.jpg using Guid(f4b046f0bc9b5a1478791c0661bab4ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5e8eba0acb08a4812fc5584c23952a9') in 0.046368 seconds 
+  Import took 0.050886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Private.png
+  artifactKey: Guid(9d2bfaa061dc5094b93cefbab8af9bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Private.png using Guid(9d2bfaa061dc5094b93cefbab8af9bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28cf3ece401a8673d55fd7c684055811') in 0.057574 seconds 
+  Import took 0.063257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpRing 1.png
+  artifactKey: Guid(a886dc94bbb2f5442aa40afa73ef25e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpRing 1.png using Guid(a886dc94bbb2f5442aa40afa73ef25e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28a64432ba80162a6f6a3ef584d07ab') in 0.046425 seconds 
+  Import took 0.051905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ic_coin 1.png
+  artifactKey: Guid(4c989af85db0e554fa970d7d8d4cb02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ic_coin 1.png using Guid(4c989af85db0e554fa970d7d8d4cb02d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379ab78f3021f38f7058825c033f4c4d') in 0.214811 seconds 
+  Import took 0.220041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpRing.png
+  artifactKey: Guid(cdebc089d9b798749beeb94f0dc63806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpRing.png using Guid(cdebc089d9b798749beeb94f0dc63806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8481cfbb8b85b2ce366a0a2b9c03699a') in 0.026780 seconds 
+  Import took 0.033501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000819 seconds.
+  path: Assets/icons/spades.png
+  artifactKey: Guid(9a1beb9fc69580a4cafa23911cffcf01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/icons/spades.png using Guid(9a1beb9fc69580a4cafa23911cffcf01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5967d3b4616ba934bc4548c6f058a54') in 0.064144 seconds 
+  Import took 0.073699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_joker.png
+  artifactKey: Guid(35d6a0729f2fbcc4f9bebebfccfec236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_joker.png using Guid(35d6a0729f2fbcc4f9bebebfccfec236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74b628eaea553571ed6e80cb3374d88') in 0.067206 seconds 
+  Import took 0.072457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/ProfileDpMask.png
+  artifactKey: Guid(cd9c035e8163435489bd425f71dea742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/ProfileDpMask.png using Guid(cd9c035e8163435489bd425f71dea742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84f38582551e254b8e40cfbcc8135504') in 0.040419 seconds 
+  Import took 0.049955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpMask 1.png
+  artifactKey: Guid(07755d20f572a6a4098b71292f66db42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpMask 1.png using Guid(07755d20f572a6a4098b71292f66db42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd97bd0fd6472f0ee2749be8dfd2fc259') in 0.044412 seconds 
+  Import took 0.051056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_11 #7100.png
+  artifactKey: Guid(cc9fcf986058b934f94e59605db0f725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_11 #7100.png using Guid(cc9fcf986058b934f94e59605db0f725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72880aa6f52adb7b0d5895c9b9b3faea') in 0.033857 seconds 
+  Import took 0.043031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker3.1.png
+  artifactKey: Guid(13820fd818ef8644a86ec8b41188a698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker3.1.png using Guid(13820fd818ef8644a86ec8b41188a698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865ca5dc2a078839f5c41a5e7b4828d6') in 0.079962 seconds 
+  Import took 0.098635 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_10 #6974.png
+  artifactKey: Guid(ce58b2cbd144bed4c8d8aa707aac631b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_10 #6974.png using Guid(ce58b2cbd144bed4c8d8aa707aac631b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdfa371c15a0015a7769d4dae1730d8') in 0.038773 seconds 
+  Import took 0.045627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Cardback.png
+  artifactKey: Guid(e67473296b1f37949bb1b774e3d315f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Cardback.png using Guid(e67473296b1f37949bb1b774e3d315f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8351f7d9056c0c855630c79912f8f64') in 0.034278 seconds 
+  Import took 0.039475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker4.1.png
+  artifactKey: Guid(b38a75b24827fc547b7de5b13f14eb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker4.1.png using Guid(b38a75b24827fc547b7de5b13f14eb8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54cd7831cd6efceed7f8a033a05cb266') in 0.045466 seconds 
+  Import took 0.069700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007084 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/UITabs/sprites/ui_simple.png
+  artifactKey: Guid(727daac88a66ba249bdd00dc9998b498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/UITabs/sprites/ui_simple.png using Guid(727daac88a66ba249bdd00dc9998b498) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a91dc5fea84b160ed7bf6bd439a3425') in 0.048442 seconds 
+  Import took 0.055219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/topbarbg.png
+  artifactKey: Guid(a51873c97bb76a54c9a2afd7b77a3dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/topbarbg.png using Guid(a51873c97bb76a54c9a2afd7b77a3dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a960d64d1ccf471e2d96de17cec9a5') in 0.046069 seconds 
+  Import took 0.053409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004763 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/ProfileDpRing.png
+  artifactKey: Guid(629ec9da0994fc741a24806dffa2d940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/ProfileDpRing.png using Guid(629ec9da0994fc741a24806dffa2d940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58f1e130be533282c2b9028d07e8b39') in 0.118419 seconds 
+  Import took 0.138047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/images.jpeg
+  artifactKey: Guid(140fec8eb6d4bb340a4a4df9c2714749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/images.jpeg using Guid(140fec8eb6d4bb340a4a4df9c2714749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513faaec8029bee78aef773cfebd0d2f') in 0.033483 seconds 
+  Import took 0.037425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpMask.png
+  artifactKey: Guid(a215a8fe13468f84bbde718844d14ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/ProfileDpMask.png using Guid(a215a8fe13468f84bbde718844d14ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf101c2b643fff512a57acbc549a548') in 0.034419 seconds 
+  Import took 0.046347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000989 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/ic_coin.png
+  artifactKey: Guid(b8a91283a28f01b42845dd50cbd6d6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/ic_coin.png using Guid(b8a91283a28f01b42845dd50cbd6d6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41ffbdb526ab09a7071b4af0be0247c') in 0.019458 seconds 
+  Import took 0.032690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/UITabs/sprites/ui_rounded.png
+  artifactKey: Guid(85a03022d9e9a8641b7e182740dfb876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/UITabs/sprites/ui_rounded.png using Guid(85a03022d9e9a8641b7e182740dfb876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa82ad9309f954f7fa04855d77f3acf9') in 0.043889 seconds 
+  Import took 0.059501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_12 #6050.png
+  artifactKey: Guid(0a418ff94d83a17408df45fb74e6de4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_3_12 #6050.png using Guid(0a418ff94d83a17408df45fb74e6de4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a446887bb7ac53d2c163d64a4b130a28') in 0.079723 seconds 
+  Import took 0.091352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Tournament.png
+  artifactKey: Guid(3cb1fefed984efd4993ce47aa486cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Tournament.png using Guid(3cb1fefed984efd4993ce47aa486cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7043dae5627788cb08ae23d0b0b3145a') in 0.038837 seconds 
+  Import took 0.047939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Frames/THE BASE-01.png
+  artifactKey: Guid(4a5af1fd5dcff924eafa71d07d02acc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/Tables/Frames/THE BASE-01.png using Guid(4a5af1fd5dcff924eafa71d07d02acc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f37ca7c356ac236b1efbfe494e6b9d9') in 0.112143 seconds 
+  Import took 0.115939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker3.2.png
+  artifactKey: Guid(132dd428e17894e4a95e270de8d6b33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker3.2.png using Guid(132dd428e17894e4a95e270de8d6b33c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f1d8f09639092d6525b25f45dedede') in 0.070817 seconds 
+  Import took 0.079412 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 6.2.png
+  artifactKey: Guid(b76f689b2a4836c4a9f441cc603ae0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 6.2.png using Guid(b76f689b2a4836c4a9f441cc603ae0f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '931bddc14ee68142af51d27afbcdf636') in 0.050122 seconds 
+  Import took 0.059386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/icons/heart (2).png
+  artifactKey: Guid(7651dd165fd48f349842041b9a587a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/icons/heart (2).png using Guid(7651dd165fd48f349842041b9a587a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a1073457ec2568a0cd98f6025af863') in 0.040067 seconds 
+  Import took 0.045827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/checkmark.png
+  artifactKey: Guid(1f806a850e4ff264eafc4935f65793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/checkmark.png using Guid(1f806a850e4ff264eafc4935f65793b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cebec742c80a879604b298cb1c2f7b88') in 0.031603 seconds 
+  Import took 0.037620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/icons/diamond.png
+  artifactKey: Guid(a30e28d74b88df54eb2dd78352fc6293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/icons/diamond.png using Guid(a30e28d74b88df54eb2dd78352fc6293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38b3f3b28c1c33706bcd9a109e7ec16') in 0.031855 seconds 
+  Import took 0.036871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker3.2.png
+  artifactKey: Guid(a60a9422344287e469312751329b9910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker3.2.png using Guid(a60a9422344287e469312751329b9910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65bb2e5f48cca29641115346c7fcd17b') in 0.021372 seconds 
+  Import took 0.028035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker4.2.png
+  artifactKey: Guid(8d1809ab7fec34d4886775a7d76bf4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker4.2.png using Guid(8d1809ab7fec34d4886775a7d76bf4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f29768d95212300ac0cd1b396a2e310d') in 0.022139 seconds 
+  Import took 0.026957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Hold'em.png
+  artifactKey: Guid(115ac06e45a814747846ca778cfdf085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Hold'em.png using Guid(115ac06e45a814747846ca778cfdf085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b76d675410e38ff3d1ef41e96e4b854') in 0.057155 seconds 
+  Import took 0.067020 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000765 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/images (1).jpeg
+  artifactKey: Guid(14ab9a1355c0df447859196537bb6635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/images (1).jpeg using Guid(14ab9a1355c0df447859196537bb6635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf2ad853be58a1221802147c9cc5e05') in 0.037330 seconds 
+  Import took 0.044567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker3.1.png
+  artifactKey: Guid(7310cbc82558259479b07fabff0d0ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker3.1.png using Guid(7310cbc82558259479b07fabff0d0ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e4c8419b55f03c77c02c23db366af02') in 0.035258 seconds 
+  Import took 0.044814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Voice.png
+  artifactKey: Guid(072a4252f708b544990bcb5b16651fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Voice.png using Guid(072a4252f708b544990bcb5b16651fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedb735f3335d5bc6057a9c158352c0f') in 0.030291 seconds 
+  Import took 0.034812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 270.424260 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker5.2.png
+  artifactKey: Guid(858ad9344500cac409e235b845b7bf15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker5.2.png using Guid(858ad9344500cac409e235b845b7bf15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed863c34d3a9658b11b2c68091d0b38') in 0.049896 seconds 
+  Import took 0.054110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.333639 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 6.1.png
+  artifactKey: Guid(ff2e5bd11c1c63340ac59a948cf2d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 6.1.png using Guid(ff2e5bd11c1c63340ac59a948cf2d0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828d456d0e5ca56c5f6a267d63670c3b') in 0.032709 seconds 
+  Import took 0.046369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 6.1.png
+  artifactKey: Guid(7895bc28f6668be43a35a0f736b7e1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 6.1.png using Guid(7895bc28f6668be43a35a0f736b7e1c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b0af31ff924bac87f803530bbb76df') in 0.029036 seconds 
+  Import took 0.035523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 2.2.png
+  artifactKey: Guid(e0f3fa1b8f4b57545869420706b21026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 2.2.png using Guid(e0f3fa1b8f4b57545869420706b21026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd0cb6119d319560a2d7c33646ca1b8') in 0.048135 seconds 
+  Import took 0.055095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 6.2.png
+  artifactKey: Guid(df6c2ae4d542f204ba34a335512a94ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 6.2.png using Guid(df6c2ae4d542f204ba34a335512a94ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61792fb0a1a6483fa8b381dc5bb3aabf') in 0.036885 seconds 
+  Import took 0.048097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000557 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 2.1.png
+  artifactKey: Guid(37880e469854dd342b11e39d079a2a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 2.1.png using Guid(37880e469854dd342b11e39d079a2a17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f34d87caacfa123d84cd8877ecad5ed') in 0.044789 seconds 
+  Import took 0.049877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 1.2.png
+  artifactKey: Guid(a5e967443cbe8b74687c305e53bde5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 1.2.png using Guid(a5e967443cbe8b74687c305e53bde5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8218b81549f9f810d28955bd9ac37d45') in 0.061269 seconds 
+  Import took 0.066793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 2.2.png
+  artifactKey: Guid(5bc0e893e327b5548aad1d69d34de694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 2.2.png using Guid(5bc0e893e327b5548aad1d69d34de694) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf62f50b2df99923bf683ef32536eaf') in 0.025944 seconds 
+  Import took 0.044826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 2.1.png
+  artifactKey: Guid(a10502b5581be9a4db5a14d8723f4738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 2.1.png using Guid(a10502b5581be9a4db5a14d8723f4738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4157999bffe981ca5a55d84b043ce08') in 0.101959 seconds 
+  Import took 0.119500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.682705 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 1.1.png
+  artifactKey: Guid(fef9c48b8fa8ea1458089433cd25dbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker 1.1.png using Guid(fef9c48b8fa8ea1458089433cd25dbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1663a271fe8f48b01cd5c081a9f71e19') in 0.047750 seconds 
+  Import took 0.061180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/istockphoto-831902150-612x612.jpg
+  artifactKey: Guid(411d6591e3cab0d459d5a9f11914ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/istockphoto-831902150-612x612.jpg using Guid(411d6591e3cab0d459d5a9f11914ce45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5b52a5c68972c4509754321e8c68dae') in 0.065142 seconds 
+  Import took 0.072784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 1.2.png
+  artifactKey: Guid(8c6e058fec8830f4a8eb61c510aa592a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 1.2.png using Guid(8c6e058fec8830f4a8eb61c510aa592a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24538f041a21c3b9b0fe2f1ac32fb1b4') in 0.032578 seconds 
+  Import took 0.041375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 1.1.png
+  artifactKey: Guid(b80ea3b9e5ba4a54db1d1f352fe0c98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/Joker-assets/Joker-assets/Joker 1.1.png using Guid(b80ea3b9e5ba4a54db1d1f352fe0c98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fc67ad763c1b2e869e5a3858c5c3af') in 0.051864 seconds 
+  Import took 0.056452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/info.png
+  artifactKey: Guid(9d8dfb53504e3524fa9a352d51d6ac92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/info.png using Guid(9d8dfb53504e3524fa9a352d51d6ac92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee81c19e6ff6c83c23cd8a62aacf808') in 0.033062 seconds 
+  Import took 0.042605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.059670 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Close.png
+  artifactKey: Guid(bf146fe55beeb4c45bb07a5d40c8f3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/05 Card Select popup Screen-assets/Close.png using Guid(bf146fe55beeb4c45bb07a5d40c8f3ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e481da0d29cf88433705fd8c35b129f9') in 0.069819 seconds 
+  Import took 0.075297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/dashboardIcon.png
+  artifactKey: Guid(4f1db872b2efa324c806fcbb54e19e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/UI/Images/dashboardIcon.png using Guid(4f1db872b2efa324c806fcbb54e19e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017000bbcc136cdcf5a45df16fdc4dd1') in 0.032905 seconds 
+  Import took 0.038023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/Coin Bg.png
+  artifactKey: Guid(e93999dab7cc5044b9e3d1ccda999bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/13 Trix Tarneeb Play screen-assets/Coin Bg.png using Guid(e93999dab7cc5044b9e3d1ccda999bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf5c9fce2c490b2bfc167c1f4deb94f') in 0.068455 seconds 
+  Import took 0.086920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Coin Bg.png
+  artifactKey: Guid(252a7d87f8cabf0458f10154c45d751c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Coin Bg.png using Guid(252a7d87f8cabf0458f10154c45d751c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a16340d193631f0c0ac751b80d5d06fc') in 0.101109 seconds 
+  Import took 0.136867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/icons/clubs.png
+  artifactKey: Guid(95e896d8041dba24fb5356fc7e22eaa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/icons/clubs.png using Guid(95e896d8041dba24fb5356fc7e22eaa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c946be19688c7aed52a314d1c3fbae4') in 0.050398 seconds 
+  Import took 0.061982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Coin Bg 1.png
+  artifactKey: Guid(2b9a797811d333d4287bde8ca575e785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/12 Tarneeb 400-41 Play screen-assets/Coin Bg 1.png using Guid(2b9a797811d333d4287bde8ca575e785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e540453b37d8691738ed75aea378203') in 0.072369 seconds 
+  Import took 0.081639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_2 #6127.png
+  artifactKey: Guid(f78f66fcfe847d747a27dfec17314825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/Screen Assets/Cards/card_2_2 #6127.png using Guid(f78f66fcfe847d747a27dfec17314825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef96e77a1d3d265051bac3022b17da4') in 0.031472 seconds 
+  Import took 0.035043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 515.274879 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/33724.jpg
+  artifactKey: Guid(edca6fb3fb944f5499dd93d3e0453751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/33724.jpg using Guid(edca6fb3fb944f5499dd93d3e0453751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07dca3d5372566e787aa5d07e3cdcb3') in 0.055704 seconds 
+  Import took 0.067342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 229.874828 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/igvDJf4bac.jpg
+  artifactKey: Guid(88f034c41988641468be5936050edbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/igvDJf4bac.jpg using Guid(88f034c41988641468be5936050edbc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f032709d877159a174358b1fcac6162a') in 0.030063 seconds 
+  Import took 0.039482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 69.142682 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Sprites/UI/j5wlZWUMaR.jpg
+  artifactKey: Guid(c6b88ee2330b0104ebe226eaca962570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Sprites/UI/j5wlZWUMaR.jpg using Guid(c6b88ee2330b0104ebe226eaca962570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e1afcee671fee0c8c70d77af1b02c2') in 0.043399 seconds 
+  Import took 0.050915 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004580 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:42)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Naffa-Live-Casino/Assets/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:42 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Assets\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.703 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2704ms)
+		BeginReloadAssembly (338ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (18ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (2236ms)
+			LoadAssemblies (284ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (816ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (887ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (167ms)
+				ProcessInitializeOnLoadAttributes (677ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1654 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.9 MB.
+System memory in use after: 91.0 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2199.
+Total: 5.322200 ms (FindLiveObjects: 0.222300 ms CreateObjectMapping: 0.076500 ms MarkObjects: 4.990700 ms  DeleteObjects: 0.031000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 352.752135 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Scripts/Managers/RoundController.cs
+  artifactKey: Guid(726512d2f5bc6ad468637408c1ebdf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Scripts/Managers/RoundController.cs using Guid(726512d2f5bc6ad468637408c1ebdf51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cf983e4ba77a34bb225d748d769fcf8') in 0.062455 seconds 
+  Import took 0.075395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.903685 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Scripts/Managers/NamesSystem.cs
+  artifactKey: Guid(7ddb4cafd67702143abc2a71f2441e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Scripts/Managers/NamesSystem.cs using Guid(7ddb4cafd67702143abc2a71f2441e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687227d5c393ca5bfa79297644f84a15') in 0.012854 seconds 
+  Import took 0.017083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.475674 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Scripts/Managers/HandManager.cs
+  artifactKey: Guid(16f94520ab4d3cc4486fc1f16814edc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Scripts/Managers/HandManager.cs using Guid(16f94520ab4d3cc4486fc1f16814edc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef5c7cb115f75bd6194ffb82ecc55d1') in 0.009734 seconds 
+  Import took 0.014508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.690419 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Scripts/Managers/PlayZone.cs
+  artifactKey: Guid(346fee988541809468618ce33b403105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Scripts/Managers/PlayZone.cs using Guid(346fee988541809468618ce33b403105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c702ea4eb864b7ed697d3116f19b3c8') in 0.011071 seconds 
+  Import took 0.015714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.373219 seconds.
+  path: Assets/Naffa-Live-Casino/Assets
+  artifactKey: Guid(822ebd33d13c447378c4f23032936d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets using Guid(822ebd33d13c447378c4f23032936d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f8ad1d155b0192c8b6305ed9ca74af') in 0.022344 seconds 
+  Import took 0.035510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.547446 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Tarneb
+  artifactKey: Guid(12a976e014b9bb148bd00091b44f9d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Tarneb using Guid(12a976e014b9bb148bd00091b44f9d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2637f31cbf7c415e50a060dfa1f6de9d') in 0.014025 seconds 
+  Import took 0.018660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.293938 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/Prefabs
+  artifactKey: Guid(e5f126ebee7423844ab15403e550b9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/Prefabs using Guid(e5f126ebee7423844ab15403e550b9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e037f9a31c121ddab88c13bc17df5e') in 0.008670 seconds 
+  Import took 0.016583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.226063 seconds.
+  path: Assets/Naffa-Live-Casino/Assets/UITabs
+  artifactKey: Guid(58c60b7b9b4b9c94cbb3201e942a46c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Assets/UITabs using Guid(58c60b7b9b4b9c94cbb3201e942a46c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e831b896ca3433fa3f1e3356b5b4ac9') in 0.017690 seconds 
+  Import took 0.026638 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015062 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+CreateSerializedAsset is not supported while importing out-of-process
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+PlayFab.PfEditor.PlayFabEditorPrefsSO:get_Instance () (at Assets/Naffa-Live-Casino/Tarneb/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs:38)
+PlayFab.PfEditor.SubMenuComponent:RegisterMenuItem (string,System.Action) (at Assets/Naffa-Live-Casino/Tarneb/PlayFabEditorExtensions/Editor/Scripts/Components/SubMenuComponent.cs:42)
+PlayFab.PfEditor.PlayFabEditorDataMenu:RegisterMenu () (at Assets/Naffa-Live-Casino/Tarneb/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:93)
+PlayFab.PfEditor.PlayFabEditorDataMenu:.cctor () (at Assets/Naffa-Live-Casino/Tarneb/PlayFabEditorExtensions/Editor/Scripts/Panels/PlayFabEditorDataMenu.cs:74)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Assets/Naffa-Live-Casino/Tarneb/PlayFabEditorExtensions/Editor/Scripts/Utils/PlayFabEditorPrefsSO.cs line 38]
+
+UnityEngine.UnityException: Creating asset at path Assets/PlayFabEditorExtensions/Editor/Resources/PlayFabEditorPrefsSO.asset failed.
+  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
+  at PlayFab.PfEditor.PlayFabEditorPrefsSO.get_Instance () [0x00084] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Tarneb\PlayFabEditorExtensions\Editor\Scripts\Utils\PlayFabEditorPrefsSO.cs:38 
+  at PlayFab.PfEditor.SubMenuComponent.RegisterMenuItem (System.String n, System.Action m) [0x00010] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Tarneb\PlayFabEditorExtensions\Editor\Scripts\Components\SubMenuComponent.cs:42 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu.RegisterMenu () [0x00018] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Tarneb\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:93 
+  at PlayFab.PfEditor.PlayFabEditorDataMenu..cctor () [0x0003a] in E:\NaffaaGroup\Assets\Naffa-Live-Casino\Tarneb\PlayFabEditorExtensions\Editor\Scripts\Panels\PlayFabEditorDataMenu.cs:74 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  4.298 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4300ms)
+		BeginReloadAssembly (531ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (3602ms)
+			LoadAssemblies (638ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (864ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (1820ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (212ms)
+				ProcessInitializeOnLoadAttributes (1556ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1655 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 91.1 MB.
+System memory in use after: 91.2 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2206.
+Total: 5.957900 ms (FindLiveObjects: 0.449100 ms CreateObjectMapping: 0.173500 ms MarkObjects: 5.185400 ms  DeleteObjects: 0.147600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 259.798136 seconds.
+  path: Assets/Sounds
+  artifactKey: Guid(1bd9117de8e10b5468d6eef193449134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds using Guid(1bd9117de8e10b5468d6eef193449134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6dfa91fa11d80c1366e61b0f9f434f') in 0.014674 seconds 
+  Import took 0.019170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.609562 seconds.
+  path: Assets/PlayFabEditorExtensions
+  artifactKey: Guid(896bded55b28347fcaa97862ba592fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlayFabEditorExtensions using Guid(896bded55b28347fcaa97862ba592fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7719fb13317163292552232846e10ca1') in 0.021754 seconds 
+  Import took 0.027461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.971578 seconds.
+  path: Assets/Naffa-Live-Casino/Tarneb/icons
+  artifactKey: Guid(40a1085c72a56f145a7d5e100ebc7bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Tarneb/icons using Guid(40a1085c72a56f145a7d5e100ebc7bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1926f984d78ac3ddf635a0be86d167da') in 0.011999 seconds 
+  Import took 0.015915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.806286 seconds.
+  path: Assets/Naffa-Live-Casino/Tarneb/Prefabs/PlayerPanelUI.prefab
+  artifactKey: Guid(8b0f0b45652be8d4e8506b6159f33179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Tarneb/Prefabs/PlayerPanelUI.prefab using Guid(8b0f0b45652be8d4e8506b6159f33179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3444002b14165e066568b986c42a0f') in 0.270524 seconds 
+  Import took 0.279581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.747625 seconds.
+  path: Assets/Naffa-Live-Casino/Tarneb/Assets/Sprites/UI/Top-5-gaming-background-songs-copyright-free.jpg
+  artifactKey: Guid(3ac6d4bff7677f1479ef8befb4e81c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Tarneb/Assets/Sprites/UI/Top-5-gaming-background-songs-copyright-free.jpg using Guid(3ac6d4bff7677f1479ef8befb4e81c00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797e9f07d62d59fdfb3927147a0830cb') in 0.140591 seconds 
+  Import took 0.145392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.937493 seconds.
+  path: Assets/Naffa-Live-Casino/Tarneb/Scenes
+  artifactKey: Guid(172d220dda241874bac815cf7cc58065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Tarneb/Scenes using Guid(172d220dda241874bac815cf7cc58065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b994067f7c7a79720a56b5e5a52738ad') in 0.014823 seconds 
+  Import took 0.022263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.418616 seconds.
+  path: Assets/Naffa-Live-Casino/Tarneb/Scripts
+  artifactKey: Guid(5f4325b65ca1c8140952be2ff33e1bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Tarneb/Scripts using Guid(5f4325b65ca1c8140952be2ff33e1bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f9872952f0edbb186767b033fadd02') in 0.011441 seconds 
+  Import took 0.016209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.320627 seconds.
+  path: Assets/Naffa-Live-Casino/Tarneb/Scripts/Tarneeb
+  artifactKey: Guid(4a59fbea235679c41980de72f070a0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naffa-Live-Casino/Tarneb/Scripts/Tarneeb using Guid(4a59fbea235679c41980de72f070a0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a87dc634bfbdee9ed0459fdeab145d25') in 0.020465 seconds 
+  Import took 0.041058 seconds .
+

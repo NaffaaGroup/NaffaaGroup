@@ -1,3 +1,0 @@
-[2021-11-7 23:13:39] layer "Messages.png": Duplicate path: Messages.png
-[2021-11-7 23:13:39] layer "Coin Bg.png": Duplicate path: Coin Bg.png
-[2021-11-7 23:13:39] layer "ic_coin.png": Duplicate path: ic_coin.png

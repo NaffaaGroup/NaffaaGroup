@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1580961045760807351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580961045760807344}
+  - component: {fileID: 1580961045760807345}
+  - component: {fileID: 6728686249429558409}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: MainPlayer
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580961045760807344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580961045760807351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580961045760807345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580961045760807351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f6ad330aa795f4380fab2719c61c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardHandUI: {fileID: 4937819737051404280, guid: f02e0819ec366724286d45c9897d0e35, type: 3}
+  cardBackUI: {fileID: 4937819737051404280, guid: 87fba17c02078fd4ca0e44de661b4306, type: 3}
+  cardTableUI: {fileID: 4937819737051404280, guid: ef3157d556fb60944ae988e6e7f787c4, type: 3}
+  meldSetUI: {fileID: 7523769000015592549, guid: f3298d2cb0040e9449ff590b7fca1184, type: 3}
+  meldGroupsUI: {fileID: 0}
+  playerNumber: 0
+  scoreTxt: {fileID: 0}
+  cardsHolderUI: {fileID: 0}
+  meldSumText: {fileID: 0}
+  meldSumGoDown: {fileID: 0}
+--- !u!114 &6728686249429558409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580961045760807351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aecfe110b122d3e4293218ebbb62bd21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerTxt: {fileID: 0}
+  secondsForPlayers: 15
+  secondsForAI: 5
