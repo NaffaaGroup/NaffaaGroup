@@ -2,24 +2,29 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Card
-    - CurrentOrder
     - DashboardSceneManager
-    - Draggable
-    - DropZone
-    - HandManager
+    - FbioImageProTool
     - NamesSystem
-    - OrderButton
     - PanelSystem
     - PartnerData
-    - PartnerSystem
-    - PlayerHandler
-    - ResultPanel
-    - RoundController
     - Scores
     - SoundSystem
-    - TimerController
+    - Tarneb41.Scripts.CurrentOrder
+    - Tarneb41.Scripts.Draggable
+    - Tarneb41.Scripts.DropZone
+    - Tarneb41.Scripts.HandManager
+    - Tarneb41.Scripts.OrderButton
+    - Tarneb41.Scripts.PartnerSystem
+    - Tarneb41.Scripts.PlayAgainPanel
+    - Tarneb41.Scripts.PlayerHandler
+    - Tarneb41.Scripts.ResultPanel
+    - Tarneb41.Scripts.RoundController
+    - Tarneb41.Scripts.TimerController
     - TypesAssets
+    PlayFab.dll:
+    - PlayFabSharedSettings
     PlayFabEditorExtensions.dll:
+    - PlayFab.PfEditor.PlayFabEditor
     - PlayFab.PfEditor.PlayFabEditorPrefsSO
     Unity.DeviceSimulator.Editor.dll:
     - UnityEditor.DeviceSimulation.DeviceInfoAsset
@@ -36,8 +41,11 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -58,7 +66,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Naffa-Live-Casino/Assets/Scenes/Tarneb.unity:
+    Assets/Naffa-Live-Casino/Tarneb/Scenes/Tarneb41.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -163,6 +171,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4314}
     - Class: 114
       Script: {instanceID: 4316}
+    - Class: 114
+      Script: {instanceID: 64608}
+    - Class: 114
+      Script: {instanceID: 71874}
+    - Class: 114
+      Script: {instanceID: 173626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,7 +314,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 810a90f16e44176824fd75dcfb9e83e9
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: DeckManager
   - hash:
       serializedVersion: 2
@@ -334,7 +348,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: cce30126b512364797faf05ca955996b
+      Hash: 3bdf09ff4fae808fe655c0165c2aad46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NamesSystem
@@ -354,7 +368,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: a24a429c8710370a308286c0641a61eb
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: PlayerHandler
   - hash:
       serializedVersion: 2
@@ -376,9 +390,9 @@ ScriptsOnlyBuild:
     className: Scores
   - hash:
       serializedVersion: 2
-      Hash: b3ae224610c2022ab3647169f885a5a6
+      Hash: 9009a549226872c4ac124bf664a11e63
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: RoundController
   - hash:
       serializedVersion: 2
@@ -420,7 +434,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 60893b3a08a29a8021cc30c10e4b8777
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: OrderButton
   - hash:
       serializedVersion: 2
@@ -438,7 +452,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 64a9e6b935008c36f567df26d26084e7
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: DropZone
   - hash:
       serializedVersion: 2
@@ -496,9 +510,9 @@ ScriptsOnlyBuild:
     className: Benchmark03
   - hash:
       serializedVersion: 2
-      Hash: 232261a5bf76c8460a9adb8aec1098da
+      Hash: a28fc50f460ae7b89a37706b69bdeb60
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: Draggable
   - hash:
       serializedVersion: 2
@@ -558,7 +572,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 513ad451bdda5925da00a0a5cd79dd61
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: CurrentOrder
   - hash:
       serializedVersion: 2
@@ -586,9 +600,9 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: cdcecfad8577be5800d58aaf107202ae
+      Hash: cddcdb7ba9ae037785c58d70287861b8
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: HandManager
   - hash:
       serializedVersion: 2
@@ -736,9 +750,9 @@ ScriptsOnlyBuild:
     className: PanelSystem
   - hash:
       serializedVersion: 2
-      Hash: 5886db835aa04b62c3c784642c7b08a3
+      Hash: 5d8e4475e06521897abe76dce46700d7
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: TimerController
   - hash:
       serializedVersion: 2
@@ -786,7 +800,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 2b646f0e83e89690495beaae97669f30
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: PartnerSystem
   - hash:
       serializedVersion: 2
@@ -822,7 +836,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: be8e6851b9aaf4e39ed737153ca04783
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: ResultPanel
   - hash:
       serializedVersion: 2
@@ -960,9 +974,27 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 82b9284a1007663d643fd9e2397f1cbe
     assemblyName: Assembly-CSharp.dll
-    namespaceName: 
+    namespaceName: Tarneb41.Scripts
     className: CardInfo
+  - hash:
+      serializedVersion: 2
+      Hash: bc8d5a16cdc0bb11217587af2000e9e4
+    assemblyName: PlayFab.dll
+    namespaceName: 
+    className: PlayFabSharedSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 1956b0940fa3baac426c21d7406ffdbe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Tarneb41.Scripts
+    className: PlayAgainPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 9a1a822894f69d53dd7eb47f4b338ed4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FbioImageProTool
   platform: 13
   scenePathNames:
-  - Assets/Naffa-Live-Casino/Assets/Scenes/Tarneb.unity
+  - Assets/Naffa-Live-Casino/Tarneb/Scenes/Tarneb41.unity
   playerPath: "C:/Users/HP/OneDrive/\u0633\u0637\u062D \u0627\u0644\u0645\u0643\u062A\u0628/nt/tarneeb.apk"

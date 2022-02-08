@@ -96,6 +96,8 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\Naffa-Live-Casino\Tarneb\Scripts\Managers\CardInfo.cs" />
+     <Compile Include="Assets\Naffa-Live-Casino\Tarneb\Scripts\Managers\PlayAgainPanel.cs" />
+     <Compile Include="Assets\FbioTools\FbioImageProTool.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -724,6 +726,14 @@
     <ProjectReference Include="PlayFabEditorExtensions.csproj">
       <Project>{f3d2bbaa-f9ed-e741-77dc-5ae96113e782}</Project>
       <Name>PlayFabEditorExtensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFabSDKEditor.csproj">
+      <Project>{11674025-e831-7d0c-5032-fc61265fdd8e}</Project>
+      <Name>PlayFabSDKEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PlayFab.csproj">
+      <Project>{154ee430-468b-9a42-7861-90ea22734fe6}</Project>
+      <Name>PlayFab</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

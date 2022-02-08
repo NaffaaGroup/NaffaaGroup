@@ -2,37 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class CurrentOrder : MonoBehaviour
+namespace Tarneb41.Scripts
 {
-
-    public static CurrentOrder Instance;
-    public Text[] Scores;
-
-    public Text[] TopScores;
-    void Start()
+    public class CurrentOrder : MonoBehaviour
     {
-        if (Instance == null)
+
+        public static CurrentOrder Instance;
+        public Text[] Scores;
+
+        public Text[] TopScores;
+        void Start()
         {
-            Instance = this;
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
-        else
-        {
-            Destroy(gameObject);
-        }    
-    }
 
-    public void SetPlayerScore(int score, int playerNumber)
-    {
-        Scores[playerNumber].text = score.ToString();
-    }
-    public GameObject getScoreParent(int playerNumber)
-    {
-        return Scores[playerNumber].transform.parent.gameObject;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void SetPlayerScore(int score, int playerNumber)
+        {
+            Scores[playerNumber].text = score.ToString();
+        }
+        public GameObject getScoreParent(int playerNumber)
+        {
+            return Scores[playerNumber].transform.parent.gameObject;
+        }
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

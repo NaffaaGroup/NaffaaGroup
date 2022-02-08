@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+namespace Tarneb41.Scripts{
 
 public class OrderButton : MonoBehaviour
 {
@@ -82,4 +83,5 @@ public class OrderButton : MonoBehaviour
     {
         transform.parent.gameObject.SetActive(false);
     }
+}
 }

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Naffa-Live-Casino/Tarneb/Scenes/Tarneb.unity
+    path: Assets/Naffa-Live-Casino/Tarneb/Scenes/Tarneb41.unity
     guid: 751ee95852af9ed46ba5d9b857c86711
   m_configObjects: {}

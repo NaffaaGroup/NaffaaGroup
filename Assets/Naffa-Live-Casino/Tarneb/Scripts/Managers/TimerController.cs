@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+namespace Tarneb41.Scripts{
+
 public class TimerController : MonoBehaviour
 {
     [SerializeField] public int secondsForPlayers;
@@ -11,6 +13,8 @@ public class TimerController : MonoBehaviour
 
 
     public float seconds;
+    public bool ReadyToStart;
+    float timeToStart =1.2f;
 
     private void Start()
     {
@@ -31,6 +35,16 @@ public class TimerController : MonoBehaviour
 
     private void Update()
     {
+        if(GetComponent<PlayerHandler>().playerTurn && !ReadyToStart){
+            timeToStart-=Time.deltaTime;
+            if(timeToStart<=0){
+                ReadyToStart = true;
+                timeToStart=1.2f;
+            }
+        }else{
+            ReadyToStart=false;
+            timeToStart=1.2f;
+        }
         if (GetComponent<PlayerHandler>().playerTurn && seconds > 0)
         {
             seconds -= Time.deltaTime;
@@ -94,4 +108,5 @@ public class TimerController : MonoBehaviour
     }
 
 
+}
 }

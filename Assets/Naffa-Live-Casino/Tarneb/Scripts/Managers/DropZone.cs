@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+namespace Tarneb41.Scripts
+{
+
 public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private GameObject cardScaleOnTable;
@@ -59,4 +62,6 @@ public class DropZone : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
+}
+    
 }
