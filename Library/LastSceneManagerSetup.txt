@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Naffa-Live-Casino/Assets/Scenes/Tarneb.unity
+- path: Assets/Naffa-Live-Casino/Tarneb/Scenes/Tarneb41.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

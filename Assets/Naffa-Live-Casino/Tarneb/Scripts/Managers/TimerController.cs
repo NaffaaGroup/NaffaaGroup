@@ -57,7 +57,7 @@ public class TimerController : MonoBehaviour
         }
         if (GetComponent<PlayerHandler>().playerType.ToString() == "Bot")
         {
-            if (seconds < secondsForAI - 2f)
+            if (seconds < secondsForAI - 1f)
             {
                 HandManager.instance.crrentPlayerID.turnStart = true;
             }

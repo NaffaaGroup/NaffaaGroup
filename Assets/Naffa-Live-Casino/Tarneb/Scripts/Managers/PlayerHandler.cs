@@ -45,6 +45,7 @@ namespace Tarneb41.Scripts
         public enum PlayerType { Bot, Human };
         public PlayerType playerType;
         public int LoopTimes = 0;
+        public int playedTime{set;get;}
         [SerializeField] public Image PlayerImageMesh;
         private void Awake()
         {

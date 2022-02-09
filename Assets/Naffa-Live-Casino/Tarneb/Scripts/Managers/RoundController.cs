@@ -78,6 +78,7 @@ namespace Tarneb41.Scripts
             OrderType.SetActive(false);
             RoundNumber++;
             TypesAssets.Instance.Show(playerOrdered.playerNumber, TypeNumber - 1, playerOrdered.orderNumber);
+            TypesAssets.Instance.ChangeText(TableOrder.ToString(), playerOrdered.playerNumber);
             TypesAssets.Instance.ShowType(type - 1, playerOrdered.playerNumber);
             // playerOrdered.playerUI.transform.GetChild(8).GetChild(type - 1).gameObject.SetActive(true);
             SoundSystem.Instance.GetComponent<AudioSource>().clip = SoundSystem.Instance.CardType[type - 1];
@@ -469,7 +470,6 @@ namespace Tarneb41.Scripts
 
                                 int RandomCard = UnityEngine.Random.Range(0, HandManager.instance.crrentPlayerID.cardsHolderUI.transform.childCount);
                                 HandManager.instance.PlayCard(currentPlayer.cardsHolderUI.transform.GetChild(RandomCard).gameObject);
-
                             }
                             else
                             {
@@ -494,11 +494,19 @@ namespace Tarneb41.Scripts
                                     HandManager.instance.crrentPlayerID.LoopTimes++;
                                     CardInfo Card = child.GetComponent<CardInfo>();
                                     breakLoop = CheckCardTable(Card, TypeName, m, HandManager.instance.crrentPlayerID.LoopTimes, OrderTypeName);
+                                    if (HandManager.instance.crrentPlayerID.LoopTimes > 24)
+                                    {
+                                        Debug.LogWarning("LoopTimes is bigger than 24");
+                                        HandManager.instance.PlayCard(child.gameObject);
+                                        breakLoop = true;
+                                        break;
+                                    }
                                     if (breakLoop)
                                     {
                                         breakLoop = false;
                                         break;
                                     }
+
 
                                 }
                             }
@@ -589,6 +597,14 @@ namespace Tarneb41.Scripts
                                         HandManager.instance.crrentPlayerID.LoopTimes++;
                                         CardInfo Card = child.GetComponent<CardInfo>();
                                         breakLoop = CheckCardTable(Card, TypeName, m, HandManager.instance.crrentPlayerID.LoopTimes, OrderTypeName);
+
+                                        if (HandManager.instance.crrentPlayerID.LoopTimes > 24)
+                                        {
+                                            Debug.LogWarning("LoopTimes is bigger than 24");
+                                            HandManager.instance.PlayCard(child.gameObject);
+                                            breakLoop = true;
+                                            break;
+                                        }
                                         if (breakLoop)
                                         {
                                             breakLoop = false;
@@ -598,6 +614,7 @@ namespace Tarneb41.Scripts
                                     }
                                 }
                             }
+                            Debug.LogWarning(currentPlayer.playerName + "Player is afk");
                         }
                     }
 
@@ -614,15 +631,10 @@ namespace Tarneb41.Scripts
                                     SameTypeCount++;
                                 }
                             }
-                        }
-                        catch (Exception)
-                        {
 
-                        }
-                        if (SameTypeCount > 0)
-                        {
-                            try
+                            if (SameTypeCount > 0)
                             {
+
                                 foreach (Transform cardComp in currentPlayer.cardsHolderUI.transform)
                                 {
                                     GameObject cardCoObj = cardComp.gameObject;
@@ -640,15 +652,9 @@ namespace Tarneb41.Scripts
                                         cardCoObj.GetComponent<Image>().color = Color.white;
                                     }
                                 }
-                            }
-                            catch (Exception)
-                            {
 
                             }
-                        }
-                        else
-                        {
-                            try
+                            else
                             {
                                 foreach (Transform cardComp in currentPlayer.cardsHolderUI.transform)
                                 {
@@ -656,14 +662,15 @@ namespace Tarneb41.Scripts
                                     cardCoObj.GetComponent<Draggable>().CanDrag = true;
                                     cardCoObj.GetComponent<Image>().color = Color.white;
                                 }
-                            }
-                            catch
-                            {
 
                             }
                         }
+                        catch
+                        {
 
+                        }
                     }
+
 
                     if (RoundNumber >= 14)
                     {
@@ -1097,6 +1104,7 @@ namespace Tarneb41.Scripts
                 else
                 {
                     Card card = child.GetChild(0).GetComponent<CardInfo>().cardInfo;
+                    //if he has the same played card
                     if (cardToCheck.cardInfo.cardType.ToString() == TypeName)
                     {
                         //if player has higher card then play highest 
@@ -1207,7 +1215,11 @@ namespace Tarneb41.Scripts
                                 return false;
                             }
                         }
-                        return false;
+                        else
+                        {
+                            return false;
+
+                        }
                     }
 
                 }

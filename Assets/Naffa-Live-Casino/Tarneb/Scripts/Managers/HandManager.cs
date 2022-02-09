@@ -384,7 +384,10 @@ namespace Tarneb41.Scripts
             }
         }
         public void PlayCard(GameObject card)
-        {
+        {   
+            //clear all log warning messages
+        
+            card.GetComponent<CardInfo>().player.playedTime++;
 
             card.transform.rotation = Quaternion.identity;
             card.GetComponent<Image>().sprite = card.GetComponent<CardInfo>().cardInfo.cardImage;
